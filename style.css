@@ -1,0 +1,64 @@
+body {
+  background: url("./assets/background_image.jpg") no-repeat center center fixed
+    #000;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+h1 {
+  font-family: "Republica Minor", sans-serif;
+}
+span {
+  letter-spacing: 2px;
+}
+span:first-child,
+span:nth-child(3) {
+  font-weight: 100;
+  font-size: 50px;
+}
+span:nth-child(3),
+span:last-child {
+  color: red;
+}
+p {
+  font-size: 25px;
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 20px 65px;
+}
+.body {
+  background-color: #000;
+  margin: 0 35vw;
+}
+.body1 {
+  position: relative;
+  text-align: left;
+}
+#signing {
+  padding: 25px 25px;
+}
+#name,
+#age,
+#email,
+#contentType,
+#feedback {
+  padding: 1em 0.5em;
+  width: 20vw;
+}
+
+.submit {
+  margin-left: 5vw;
+}
+.submit > input {
+  padding: 0.6em 3em;
+  border-radius: 1.5em;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+}
+.submit > input:hover {
+  background-color: rgb(151, 32, 3);
+}

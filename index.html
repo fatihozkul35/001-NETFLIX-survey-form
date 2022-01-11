@@ -14,103 +14,94 @@
   </head>
   <body>
     <div class="main">
-      <div class="header">
+      <div class="main-header">
         <h1>
-          <span>N</span>
-          <span>ET</span>
-          <span>F</span>
-          <span>LIX</span>
+          <span>NET</span>
+          <span>FLIX</span>
         </h1>
         <p>
           Thank you for signing up at Netflix. Tell us more about your self...
         </p>
       </div>
-      <div class="body">
-        <div class="body1">
-          <form action="/action_page.php" id="signing">
-            <div>
-              <label for="name">Name</label> <br /><br />
-              <input type="text" id="name" placeholder="Enter your name" />
-              <br /><br />
-            </div>
 
-            <div>
-              <label for="age">Age</label> <br /><br />
-              <input type="number" id="age" placeholder="Age" required />
-              <br /><br />
-            </div>
+      <div class="main-body1">
+        <form action="/action_page.php" id="signingForm">
+          <div>
+            <label for="name">Name</label> <br /><br />
+            <input type="text" id="name" placeholder="Enter your name" />
+            <br /><br />
+          </div>
 
-            <div>
-              <label for="email">Email</label> <br /><br />
-              <input
-                type="email"
-                id="email"
-                placeholder="Enter your Email"
-                required
-              />
-              <br /><br />
-            </div>
+          <div>
+            <label for="age">Age</label> <br /><br />
+            <input type="number" id="age" placeholder="Age" required />
+            <br /><br />
+          </div>
 
-            <div>
-              <label for="contentType">Content type</label> <br /><br />
-              <select name="contentType" id="contentType">
-                <optgroup label="Series">
-                  <option value="prisonBreak">Prison Break</option>
-                  <option value="squidGame">Squid Game</option>
-                </optgroup>
+          <div>
+            <label for="email">Email</label> <br /><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your Email"
+              required
+            />
+            <br /><br />
+          </div>
 
-                <optgroup label="Film">
-                  <option value="dontLookUp">Don't Look Up</option>
-                  <option value="shooter">Shooter</option>
-                </optgroup>
-              </select>
-              <br /><br />
-            </div>
+          <div>
+            <label for="contentType">Content type</label> <br /><br />
+            <select name="contentType" id="contentType">
+              <optgroup label="Series">
+                <option value="prisonBreak">Prison Break</option>
+                <option value="squidGame">Squid Game</option>
+              </optgroup>
 
-            <div>
-              <label>Movie type</label> <br />
-              <input type="checkbox" id="type1" name="type1" value="Comedy" />
-              <label for="type1">Comedy</label><br />
+              <optgroup label="Film">
+                <option value="dontLookUp">Don't Look Up</option>
+                <option value="shooter">Shooter</option>
+              </optgroup>
+            </select>
+            <br /><br />
+          </div>
 
-              <input type="checkbox" id="type2" name="type2" value="Action" />
-              <label for="type2">Action</label><br />
+          <div>
+            <label>Movie type</label> <br />
+            <input type="checkbox" id="type1" name="type1" value="Comedy" />
+            <label for="type1">Comedy</label><br />
 
-              <input type="checkbox" id="type3" name="type3" value="Romance" />
-              <label for="type3">Romance</label><br />
-              <br />
-            </div>
+            <input type="checkbox" id="type2" name="type2" value="Action" />
+            <label for="type2">Action</label><br />
 
-            <div>
-              <label> Gender</label> <br />
-              <input
-                type="radio"
-                id="male"
-                name="gender"
-                value="male"
-                checked
-              />
-              <label for="male">Male</label><br />
-              <input type="radio" id="female" name="gender" value="female" />
-              <label for="female">Female</label><br />
-              <input type="radio" id="other" name="gender" value="other" />
-              <label for="other">Other</label>
-              <br /><br />
-            </div>
+            <input type="checkbox" id="type3" name="type3" value="Romance" />
+            <label for="type3">Romance</label><br />
+            <br />
+          </div>
 
-            <div>
-              <label>Feed back</label> <br />
-              <textarea
-                id="feedback"
-                name="feedback"
-                placeholder="Any comment"
-              ></textarea>
-              <br />
-            </div>
-            <div class="submit">
-              <input type="submit" />
-            </div>
-          </form>
-        </div>
+          <div>
+            <label> Gender</label> <br />
+            <input type="radio" id="male" name="gender" value="male" checked />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+            <br /><br />
+          </div>
+
+          <div>
+            <label>Feed back</label> <br />
+            <textarea
+              id="feedback"
+              name="feedback"
+              placeholder="Any comment"
+            ></textarea>
+            <br />
+          </div>
+          <div class="submit">
+            <input type="submit" />
+          </div>
+        </form>
       </div>
     </div>
   </body>

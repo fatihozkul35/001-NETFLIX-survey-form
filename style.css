@@ -1,43 +1,60 @@
+/*** All elements and body styles ***/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: url("./assets/background_image.jpg") no-repeat center center fixed
-    #000;
+  background: url("./assets/background_image.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white;
   text-align: center;
 }
+
+/***** Header styles *****/
+
 h1 {
   font-family: "Republica Minor", sans-serif;
 }
+
 span {
   letter-spacing: 2px;
+  display: inline-block;
+  font-size: 5vh;
 }
-span:first-child,
-span:nth-child(3) {
-  font-weight: 100;
-  font-size: 50px;
+span::first-letter {
+  font-size: 150%;
 }
-span:nth-child(3),
 span:last-child {
   color: red;
 }
 p {
-  font-size: 25px;
+  font-size: 3vh;
 }
 
+/*** +1 Background style***/
 .main {
   background-color: rgba(0, 0, 0, 0.4);
-  margin: 20px 65px;
+  margin: 5vh 5vw;
+  display: flex;
+  flex-direction: column;
 }
-.body {
+
+/*** Main-body styles ***/
+
+.main-body1 {
   background-color: #000;
-  margin: 0 35vw;
+  width: 25vw;
+  align-self: center;
 }
-.body1 {
-  position: relative;
+
+/*** Form styles ***/
+
+#signingForm {
+  padding: 2vh 2vw;
   text-align: left;
-}
-#signing {
-  padding: 25px 25px;
 }
 #name,
 #age,
@@ -46,6 +63,12 @@ p {
 #feedback {
   padding: 1em 0.5em;
   width: 20vw;
+}
+
+input {
+  display: inline-block;
+  box-sizing: border-box;
+  /* width: 100%; */
 }
 
 .submit {
